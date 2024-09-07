@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.header-line{
+    width: 120rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-line::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #00558F transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 4.9rem;
+    left: 58.9rem;
+}
+
+.studiyng-form{
+    width: 120rem;
+    height: 18.125rem;
+    flex-shrink: 0;
+    background: url(../underhead.png);
+}
+
+.header-text{
+    margin-left: -1.8rem;
+    width: clamp(2.5rem, 55%, 75rem);
+}
+
+.header-text ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-text ul li{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-text ul li a{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header-text ul li:nth-child(5){
+    text-decoration: underline;
+}
+
+.header-underline{
+    width: 120rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.contacts-holder{
+    margin-top: 5rem;
+    width: 120rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts{
+    display: grid;
+    width: 96rem;
+    height: 149.9375rem;
+    flex-shrink: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.contacts-right, .contacts-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-right span, .contacts-left span{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 100% */
+    margin: 0.2rem;
+}
+
+.contacts-right .gray-text, .contacts-left .gray-text{
+    color: rgba(170, 170, 170, 0.50);
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+.contacts-right p, .contacts-left p{
+    color: #00558F;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0.2rem;
+}
+
+
+footer{
+    margin-top: 3.87rem;
+}
+
+.footer-line{
+    width: 120rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    background: #F4CA2F;
+}
+
+.footer-info-holder{
+    width: 120rem;
+    height: 19.9375rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info{
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+}
+
+.kmrk-logo{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text-info{
+    margin-top: 5.13rem;
+    margin-left: 2.36rem;
+    display: flex;
+    width: 35.25rem;
+    height: 2.8125rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-info p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer-text-info ul{
+    margin-left: -2.5rem;
+}
+
+.footer-text-info ul li{
+    list-style: none;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem; /* 125% */
+    padding-bottom: 0;
+}
+
+.footer-text-info ul li:not(:nth-child(1)){
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.look-out-for-us{
+    margin-left: 40rem;
+}
+
+.look-out-for-us .look-p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.look-out-for-us p svg{
+    margin-left: 8rem;
+}
+

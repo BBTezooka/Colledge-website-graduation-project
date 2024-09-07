@@ -1,0 +1,405 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.header-line{
+    width: 120rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-line::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #00558F transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 4.9rem;
+    left: 58.9rem;
+}
+
+.studiyng-form{
+    width: 120rem;
+    height: 18.125rem;
+    flex-shrink: 0;
+    background: url(../underhead.png);
+}
+
+.header-text{
+    margin-left: -1.8rem;
+    width: clamp(2.5rem, 55%, 75rem);
+}
+
+.header-text ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-text ul li{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-text ul li a{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header-text ul li:nth-child(4){
+    text-decoration: underline;
+}
+
+.header-underline{
+    width: 120rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+
+.main-info-holder{
+    width: 120rem;
+    flex-shrink: 0;
+    background: #00558F;
+    margin-top: 0;
+}
+
+
+.big-yellow-p{
+    padding-top: 2.5rem;
+    padding-left: 13rem;
+    width: 96.125rem;
+}
+
+.big-yellow-p span{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase;    
+}
+
+.big-yellow-p p{
+    color: #FFF;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.big-yellow-p ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.big-yellow-p li{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.spec-info{
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 13rem;
+    width: 96.125rem;
+}
+
+.main-line{
+    width: 120rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    background: #F4CA2F;
+}
+
+.big-form-holder{
+    margin-top: 2.5rem;
+    width: 120rem;
+}
+
+.big-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inside-form{
+    width: 47.5rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #00558F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.inside-form h3{
+    margin: 0.2rem;
+    padding-top: .8rem;
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase; 
+}
+
+.form-content{
+    width: 47.5rem;
+}
+
+.student-info, .mother-info, .father-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.student-info p,.mother-info p, .father-info p{
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mother-info p{
+    width: 30rem;
+}
+
+.students_list-holder{
+    padding-top: 1.5rem;
+}
+
+.students_list-holder span{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase;   
+}
+
+.student-list-holder{
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#awesome_students_list{
+    height: 80%;
+}
+
+#awesome_students_list p, #not_awesome_students_list p{
+    font-family: Open Sans;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem; /* 237.5% */
+    color:#FFF;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+.big-form form p{
+    color: #F4CA2F;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem; /* 118.75% */
+
+}
+
+
+.big-form form input, select{
+    width: 43.5625rem;
+    height: 2.6875rem;
+    text-align: center;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.375rem; /* 237.5% */
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.button-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.big-form form button{
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 19.125rem;
+    height: 3.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.4375rem;
+    border: 0;
+    background: #007CC4;
+    cursor: pointer;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.big-form form button:hover{
+    background-color: #024572;
+}
+
+footer{
+    margin-top: 3.87rem;
+}
+
+.footer-line{
+    width: 120rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    background: #F4CA2F;
+}
+
+.footer-info-holder{
+    width: 120rem;
+    height: 19.9375rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info{
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+}
+
+.kmrk-logo{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text-info{
+    margin-top: 5.13rem;
+    margin-left: 2.36rem;
+    display: flex;
+    width: 35.25rem;
+    height: 2.8125rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-info p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer-text-info ul{
+    margin-left: -2.5rem;
+}
+
+.footer-text-info ul li{
+    list-style: none;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem; /* 125% */
+    padding-bottom: 0;
+}
+
+.footer-text-info ul li:not(:nth-child(1)){
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.look-out-for-us{
+    margin-left: 40rem;
+}
+
+.look-out-for-us .look-p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.look-out-for-us p svg{
+    margin-left: 8rem;
+}

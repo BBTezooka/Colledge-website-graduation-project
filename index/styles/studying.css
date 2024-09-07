@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.header-line{
+    width: 120rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-line::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #00558F transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 4.9rem;
+    left: 58.9rem;
+}
+
+.header-text{
+    margin-left: -1.8rem;
+    width: clamp(2.5rem, 55%, 75rem);
+}
+
+.header-text ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-text ul li{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-text ul li a{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header-text ul li:nth-child(3){
+    text-decoration: underline;
+}
+
+.header-underline{
+    width: 120rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.main-info-holder{
+    margin-top: 8rem;
+    width: 120rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-info-top-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-info-top{
+    display: grid;
+    grid-template-columns: repeat(4, 24rem);
+    place-items: center;
+    gap: 0.8rem;
+}
+.main-content-top{
+    width: 24rem;
+    height: 23.25rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #00558F;
+}
+
+.main-content-bottom{
+    width: 24rem;
+    height: 29.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #00558F;
+}
+
+.main-content-top li{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.8rem;
+}
+
+.main-info-bottom-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 24rem);
+    place-items: center;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.picture-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.44rem;
+}
+
+.svo-pic, .sud-pic, .radio-pic, .it-pic, .mech-pic, .auto-pic, .eco-pic{
+    width: 23.125rem;
+    height: 12.75rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    flex-direction:column-reverse;
+    display: flex;
+}
+
+.svo-pic{
+    background:  url(../SVO.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.sud-pic{
+    background:  url(../suda.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.radio-pic{
+    background:  url(../radio.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.it-pic{
+    background:  url(../IT.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.mech-pic{
+    background:  url(../mech.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.auto-pic{
+    background:  url(../auto.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+.eco-pic{
+    background:  url(../eco.png), lightgray 0px -21.69px / 100% 121.265% no-repeat;
+}
+
+
+.pic-big-text p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    padding-left: 0.44rem;
+    margin: 0;
+}
+
+.pic-big-text a{
+    text-decoration: none;
+    color: #F4CA2F;
+}
+
+
+.main-content-top ul li{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+.main-content-bottom ul li{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.2rem;
+
+}
+
+footer{
+    margin-top: 3.87rem;
+}
+
+.footer-line{
+    width: 120rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    background: #F4CA2F;
+}
+
+.footer-info-holder{
+    width: 120rem;
+    height: 19.9375rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info{
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+}
+
+.kmrk-logo{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text-info{
+    margin-top: 5.13rem;
+    margin-left: 2.36rem;
+    display: flex;
+    width: 35.25rem;
+    height: 2.8125rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-info p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer-text-info ul{
+    margin-left: -2.5rem;
+}
+
+.footer-text-info ul li{
+    list-style: none;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem; /* 125% */
+    padding-bottom: 0;
+}
+
+.footer-text-info ul li:not(:nth-child(1)){
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.look-out-for-us{
+    margin-left: 40rem;
+}
+
+.look-out-for-us .look-p{
+    color: #F4CA2F;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.look-out-for-us p svg{
+    margin-left: 8rem;
+}

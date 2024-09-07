@@ -1,0 +1,407 @@
+*{
+	font-family: Open Sans;
+}
+
+/* ----------NAVBAR---------- */
+nav {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	background-color : rgb(15, 139, 205);
+	
+}
+
+.navbar-links a {
+	text-decoration: none;
+	color: #FFF;
+	margin: 0 40px;
+}
+
+.navbar-links a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* ----------HEADER---------- */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.header-line{
+    width: 120rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-line::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #00558F transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 4.9rem;
+    left: 58.9rem;
+}
+
+.header-text{
+    margin-left: -1.8rem;
+    width: clamp(2.5rem, 55%, 75rem);
+}
+
+.header-text ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-text ul li{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-text ul li a{
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem !important; 
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header-text ul li:nth-child(3){
+    text-decoration: underline;
+}
+
+.header-underline{
+    width: 120rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+h1{
+	color: #00558F;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 53px;
+	letter-spacing: 0.04em;
+}
+.glav {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tree {
+	text-decoration: none;
+	color: rgba(179, 174, 174, 0.801);
+	display: inline;
+	position: relative;
+	top: 10px;
+	right: -30px;
+}
+.tree p { 
+    display: inline-block;
+	margin: 0 px;
+}
+.tree2 {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.801);
+	display: inline-flex;
+	position: relative;
+	top: 40px;
+	right: 10px;
+	left: -560px;
+}
+.tree2 p { 
+	display: inline;
+    margin: 0 10px;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 0.10em;
+	color: #00558F;
+}
+
+
+.tree2 span{
+	display: inline;
+    margin: 0 10px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.10em;
+	color: #00558F;
+}
+
+.tree p { 
+	display: inline;
+	margin: 0 20px;
+}
+.tree{
+	display:inline;
+	padding: 20px;
+}
+/* ----------MANAGEMENT----------*/
+#management {
+	position: absolute;
+	width: 300px;
+	height: 1930px;
+	text-align: center;
+	right: 20px;
+	color: #00558F;
+}
+
+.maneg-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2050px;
+	line-height: 1.5em;
+}
+
+.maneg-container h3 {
+	opacity: 0.3;
+	font-size: 16px;
+}
+
+/* ----------COLLEGE INFO---------- */
+#college-info {
+	position: relative;
+	margin-top: 30px;
+	height: 650px;
+    right: 88px;
+	color: #00558F;
+	height: 137rem;
+	margin-top: 6rem;
+}
+.info-img_special {
+    float:left;
+   }
+.otstupy-izobrazheniye-slevo img {
+	float: left;
+	padding: 0 18px 18px 0;
+	}
+#college-info .info-inner {
+	width: 1195px;
+	line-height: 31px;	
+	height: 781px;
+	margin: auto;
+	font-size: 17px;
+	color: #00558F;
+}
+.create:before {
+    content: url(image.png);
+    left:100px;
+}
+a {
+	text-decoration: none;
+	color: #00558F;
+}
+
+h2 {
+	color: #00558F;
+	margin-top: 20px;
+}
+
+/* STUDENTS */
+
+.student-info-holder{
+	margin-top: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.wrap{
+	width: 50%;
+	background: #00558F;
+	border-radius: 5px;
+	min-height: 15rem;
+	display: flex;
+	justify-content: center;
+}
+
+.student-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.awesome-students, .other-bitches, .student-top-text, .student-mega-text{
+	width: 40rem;
+	margin-bottom: 1rem;
+}
+
+.student-huge-text{
+	color: #F4CA2F;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase; 
+	margin-bottom: 2rem;
+	margin-top: 0.8rem;
+}
+
+.student-mega-text{
+	color: #F4CA2F;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase; 
+}
+
+.awesome-students .awesome-place, .other-bitches .awesome-place{
+    color: #F4CA2F;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 75% */
+    text-transform: uppercase; 
+}
+
+.awesome-students p{
+	color: #FFF;
+	padding: 5px;
+	font-size: 1.1rem;
+	font-weight: 600;
+    text-align: left;
+}
+
+.other-bitches p{
+	color: #FFF;
+	padding: 5px;
+	font-size: 1.1rem;
+	font-weight: 600;
+    text-align: left;
+}
+
+.student, .student-top-text, .student-mega-text{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+
+}
+
+/* ----------FOOTER---------- */
+footer{
+    margin-top: 3.87rem;
+}
+
+.footer-line{
+    width: 120rem;
+    height: 0.9375rem;
+    flex-shrink: 0;
+    background: #F4CA2F;
+}
+
+.footer-info-holder{
+    width: 120rem;
+    height: 19.9375rem;
+    flex-shrink: 0;
+    background: #00558F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info{
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+}
+
+.kmrk-logo{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text-info{
+    margin-top: 5.13rem;
+    margin-left: 2.36rem;
+    display: flex;
+    width: 35.25rem;
+    height: 2.8125rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-info p{
+    color: #F4CA2F;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer-text-info ul{
+    margin-left: -2.5rem;
+}
+
+.footer-text-info ul li{
+    list-style: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem; /* 125% */
+    padding-bottom: 0;
+}
+
+.footer-text-info ul li:not(:nth-child(1)){
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.look-out-for-us{
+    margin-left: 40rem;
+}
+
+.look-out-for-us .look-p{
+    color: #F4CA2F;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.look-out-for-us p svg{
+    margin-left: 8rem;
+}
